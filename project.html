@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BM e-Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('web-development.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    
+  .img-fixed {
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+  .product-card {
+    border: 4px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+    height: 100%;
+  }
+
+  .product-card:hover {
+    transform: scale(1.03);
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .product-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+.footer {
+      background-color: #e6f3fa;
+      color: #003d66;
+      padding: 40px 20px 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+    .footer a {
+      color: #003d66;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid #cce5f6;
+      margin-top: 20px;
+      padding-top: 10px;
+    }
+
+  </style>
+</head>
+<body class="text-white">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">BM e-Solutions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="front.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="project.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="container my-5">
+  <h2 class="text-center">Our Products <br><br>Websites</h2>
+  <div class="row g-4">
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="card h-100 text-center">
+        <a href="https://www.edcea.in/" target="_blank">
+          <img src="img/6qrir2lg.png" class="card-img-top mt-2" alt="EDCEA">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">EDCEA</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="card h-100 text-center">
+        <a href="https://www.kotsmedia.com/" target="_blank">
+          <img src="img/8i9n90qo.png" class="card-img-top" alt="Kots Media">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Kots Media</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="card h-100 text-center">
+        <a href="https://www.konguvenadar.org/" target="_blank">
+          <img src="img/7qyt3wde.png" class="card-img-top" alt="Kongu Venadar">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Kongu Venadar</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="card h-100 text-center">
+        <a href="https://getmypaint.com/" target="_blank">
+          <img src="img/get-my-paint-300x200.png" class="card-img-top" alt="Get My Paint">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Get My Paint</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="card h-100 text-center">
+        <a href="https://www.jcube.co.uk/" target="_blank">
+          <img src="img/j-cube.png" class="card-img-top" alt="J CUBE">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">J CUBE</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="card h-100 text-center">
+        <a href="https://www.storyjourney.org/" target="_blank">
+          <img src="img/story-journey-300x200.png" class="card-img-top" alt="STORY JOURNEY">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">STORY JOURNEY</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="card h-100 text-center">
+        <a href="https://darwinhindutemple.org/" target="_blank">
+          <img src="img/darwin-hindu-temple-300x200.png" class="card-img-top" alt="DARWIN HINDU TEMPLE">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">DARWIN HINDU TEMPLE</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="card h-100 text-center">
+        <a href="https://indiagoodiestore.com/" target="_blank">
+          <img src="img/india-goodie-store-300x200.png" class="card-img-top" alt="INDIA GOODIE STORE">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">INDIA GOODIE STORE</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="card h-100 text-center">
+        <a href="https://gunnar.com/" target="_blank">
+          <img src="img/gunnar-1-300x200.png" class="card-img-top" alt="GUNNAR">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">GUNNAR</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="card h-100 text-center">
+        <a href="http://yesandyes.in/" target="_blank">
+          <img src="img/yes-and-yes-300x200.png" class="card-img-top" alt="YES AND YES">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">YES AND YES</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="card h-100 text-center">
+        <a href="https://www.rameshpandit.in/" target="_blank">
+          <img src="img/astrology-300x200.png" class="card-img-top" alt="ASTROLOGY">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">ASTROLOGY</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="card h-100 text-center">
+        <a href="https://www.rayengineeringworks.com/" target="_blank">
+          <img src="img/raye-300x181.png" class="card-img-top" alt="RAY ENGINEERING">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">RAY ENGINEERING</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="card h-100 text-center">
+        <a href="https://naturoindia.com/" target="_blank">
+          <img src="img/naturo-india-300x200.png" class="card-img-top" alt="NATURO INDIA">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">NATURO INDIA</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="card h-100 text-center">
+        <a href="https://www.read2dream.org/" target="_blank">
+          <img src="img/read2dream-300x200.png" class="card-img-top" alt="READ2DREAM">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">READ2DREAM</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="card h-100 text-center">
+        <a href="https://www.readindigenous.org/" target="_blank">
+          <img src="img/readindigenous-300x200.png" class="card-img-top" alt="READINDIGENOUS">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">READINDIGENOUS</h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<section class="container my-5">
+  <h2 class="text-center mb-4">.NET Projects</h2>
+
+  <div class="row g-4">
+    <div class="col-md-12 mx-auto animate-on-scroll">
+      <img src="carrierbag shop.jpeg" alt="Carrierbag Shop" class="img-fixed shadow rounded">
+    </div>
+    <div class="col-md-12 mx-auto animate-on-scroll">
+      <img src="asiandb.jpeg" alt="AsianDB Project" class="img-fixed shadow rounded">
+    </div>
+    <div class="col-md-12 mx-auto animate-on-scroll">
+      <img src="ce.jpeg" alt="CE Project" class="img-fixed shadow rounded">
+    </div>
+    <div class="col-md-12 mx-auto animate-on-scroll">
+      <img src="modus.jpeg" alt="Modus Project" class="img-fixed shadow rounded">
+    </div>
+       <div class="col-md-12 mx-auto animate-on-scroll">
+      <img src="solid online.jpeg" alt="solid Shop" class="img-fixed shadow rounded">
+    </div>
+    <div class="col-md-12 mx-auto animate-on-scroll">
+      <img src="desk.jpeg" alt="desk Project" class="img-fixed shadow rounded">
+    </div>
+    <div class="col-md-12 mx-auto animate-on-scroll">
+      <img src="tp.jpeg" alt="tp Project" class="img-fixed shadow rounded">
+    </div>
+    <div class="col-md-12 mx-auto animate-on-scroll">
+      <img src="yy.jpeg" alt="yy Project" class="img-fixed shadow rounded">
+    </div>
+  </div>
+</section>
+
+
+
+    <h2 class="text-center my-4">Android Apps</h2>
+
+<div class="container">
+  <div class="row g-4">
+  
+    <!-- Example product card - repeat for all items -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.muruganstickers" target="_blank">
+          <img src="app/lord-murugan-wastickers-300x201.png" alt="Lord Murugan WAStickers">
+        </a>
+        <div class="product-title">Lord Murugan WAStickers</div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.vadivelu.tamilstickers" target="_blank">
+          <img src="app/mm1rs71k.png" alt="Vadivelu Stickers">
+        </a>
+        <div class="product-title">Vadivelu Stickers</div>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+ <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.valentinesdaystickers" target="_blank">
+        <img src="app/valentines-day-wastickers-300x210.png" alt="Valentines Day">
+      </a>
+      <div class="product-title">Valentines Day</div>
+        
+  </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+         <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.wishes" target="_blank">
+        <img src="app/wishes-image-300x218.png" alt="Festival Wishes WAStickers">
+      </a>
+      <div class="product-title">Festival Wishes WAStickers</div>
+        </div>
+</div>
+
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href="https://play.google.com/store/apps/details?id=com.brightmindsapps.quotes" target="_blank">
+        <img src="app/wall.jpg" alt="Wallpaper And Quotes">
+      </a>
+      <div class="product-title">Wallpaper And Quotes</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.balloonsmasher" target="_blank">
+        <img src="app/bow-and-arrow-–-archery-300x232.png" alt="Bow & Arrow – Archery">
+      </a>
+      <div class="product-title">Bow & Arrow – Archery</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.malayalam.chat.stickers" target="_blank">
+        <img src="app/malayalam-WAStickers-300x230.jpg" alt="Malayalam Stickers – Dialogue, Meme, Chat & Text">
+      </a>
+      <div class="product-title">Malayalam Stickers – Dialogue, Meme, Chat & Text</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.kannada.chat.stickers" target="_blank">
+        <img src="app/kannata-300x230.png" alt="Kannada Sticker Pack – Comedy, Chat, Wishes.">
+      </a>
+      <div class="product-title">Kannada Sticker Pack – Comedy, Chat, Wishes.</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.tamil.animated.wastickers" target="_blank">
+        <img src="app/animaction-300x227.png" alt="Tamil Animated Stickers for WhatsApp">
+      </a>
+      <div class="product-title">Tamil Animated Stickers for WhatsApp</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.quiz.synonyms.antonyms" target="_blank">
+        <img src="app/synonyms-and-antonyms-quiz-300x228.png" alt="Synonyms & Antonyms - Quiz App">
+      </a>
+      <div class="product-title">Synonyms & Antonyms - Quiz App</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+         <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.malayalam.animated.wastickers" target="_blank">
+        <img src="app/animated-malayalam-stickers-300x221.png" alt="Animated Malayalam Stickers">
+      </a>
+      <div class="product-title">Animated Malayalam Stickers</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.malayalam.funnyaudioclips" target="_blank">
+        <img src="app/malayalam-audio-clips-–comedy-dialogues-and-chat-300x215.png" alt="Malayalam Audio Clips – Comedy, Dialogues & Chat">
+      </a>
+      <div class="product-title">Malayalam Audio Clips – Comedy, Dialogues & Chat</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.whatsappsticker" target="_blank">
+        <img src="app/Tamil-WASticker-300x222.jpg" alt="Tamil WhatsApp Stickers">
+      </a>
+      <div class="product-title">Tamil WhatsApp Stickers</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.tamilstickers" target="_blank">
+        <img src="app/tamil-stickers-–actors-300x235.png" alt="Tamil Stickers – Actors">
+      </a>
+      <div class="product-title">Tamil Stickers – Actors</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.tamilcomedy" target="_blank">
+        <img src="app/tamil-comedy-and-punch-dialogues-300x228.png" alt="Tamil Comedy & Punch Dialogues">
+      </a>
+      <div class="product-title">Tamil Comedy & Punch Dialogues</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        
+ <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.wordhunt" target="_blank">
+        <img src="app/word-hunt-300x228.png" alt="Word Hunt">
+      </a>
+      <div class="product-title">Word Hunt</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.tamilwordgame" target="_blank">
+        <img src="app/polygon-puzzle-300x232.png" alt="Polygon Puzzle Game">
+      </a>
+      <div class="product-title">Polygon Puzzle Game</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.kidsmaths" target="_blank">
+        <img src="app/kids-maths.png" alt="Kids Maths">
+      </a>
+      <div class="product-title">Kids Maths</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href=https://play.google.com/store/apps/details?id=com.bmesolutions.englishtracingletterbook target="_blank">
+        <img src="app/tracing-letters-and-numbers-300x228.png" alt="Tracing Letters and Numbers">
+      </a>
+      <div class="product-title">Tracing Letters and Numbers</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.hitthenumbers" target="_blank">
+        <img src="app/hit-the-numbers-300x228.png"alt="Hit The Numbers">
+      </a>
+      <div class="product-title">Hit The Numbers</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+              <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.polygonpuzzlegame" target="_blank">
+        <img src="app/tamil-word-game-300x183.jpg" alt="Tamil Word Game">
+      </a>
+      <div class="product-title">Tamil Word Game</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+        <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.tamilsolloduvilaiyadu" target="_blank">
+        <img src="app/sollodu-vilayadu-300x228.png" alt="Sollodu Vilayadu">
+      </a>
+      <div class="product-title">Sollodu Vilayadu</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+         <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.balloonsmasher" target="_blank">
+        <img src="app/balloon-smasher-300x228.png" alt="Balloon Smasher">
+      </a>
+      <div class="product-title">Balloon Smasher</div>
+        </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card shadow-sm">
+         <a href="https://play.google.com/store/apps/details?id=com.bmesolutions.malayalamwordgame" target="_blank">
+        <img src="app/malayalam-word-game-300x228.png" alt="Malayalam word game">
+      </a>
+      <div class="product-title">Malayalam word game</div>
+        </div>
+</div>
+
+ <footer class="bg-dark text-light pt-5 mt-4 mb-4">
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-4">
+          <h5>Services</h5>
+          <ul class="list-unstyled">
+           <li><a href="https://www.bmesolutions.in/dot-net/">Dot Net</a></li>
+        <li><a href="https://www.bmesolutions.in/website-development/">Website Development</a></li>
+        <li><a href="https://www.bmesolutions.in/mobile-application-development/">Mobile App Development</a></li>
+        <li><a href="https://www.bmesolutions.in/search-engine-optimization/">Search Engine Optimization</a></li>
+        <li><a href="https://www.bmesolutions.in/e-commerce-development/">E-Commerce Development</a></li>
+        <li><a href="https://www.bmesolutions.in/cms-development/">CMS Development</a></li>
+        <li><a href="https://www.bmesolutions.in/digital-marketing/">Digital Marketing</a></li>
+        <li><a href="https://www.bmesolutions.in/training-consultancy/">Training & Consultancy</a></li>
+        <li><a href="https://www.bmesolutions.in/data-entry/">Data Entry</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Recent Posts</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://www.bmesolutions.in/what-is-api-how-does-it-work/">What is API? How does it work?</a></li>
+        <li><a href="https://www.bmesolutions.in/a-cost-of-website-development-at-software-company-in-erodeindia/">Cost of website development in Erode, India</a></li>
+        <li><a href="https://www.bmesolutions.in/traditional-marketing-vs-digital-marketing-key-differences/">Traditional Marketing vs Digital Marketing</a></li>
+        <li><a href="https://www.bmesolutions.in/why-is-it-important-to-choose-a-digital-marketing-company-for-your-business/">Why choose a digital marketing company?</a></li>
+        <li><a href="https://www.bmesolutions.in/how-does-google-bert-work-and-its-uses/">How does Google BERT work?</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Get in Touch</h5>
+          <p>info@bmesolutions.in</p>
+          <p>+91 9841683336</p>
+        </div>
+      </div>
+      <div class="text-center border-top mt-4 pt-3">
+        <p>&copy; 2025 BM e-Solutions | Erode | Chennai – Tamil Nadu</p>
+        <p>Design: BM e-Solutions |<a href="https://www.bmesolutions.in/privacy/">Privacy & Terms</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll('.animate-on-scroll');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // Animate once
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    elements.forEach(el => observer.observe(el));
+  });
+</script>
+</body>
+</html>

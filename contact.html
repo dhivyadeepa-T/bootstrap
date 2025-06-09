@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - BM e-Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('web-development.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body class="text-white">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">BM e-Solutions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="front.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="project.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Side: Office Details -->
+      <div class="col-md-6">
+        <div class="card mb-4 border-dark bg-light bg-opacity-50 text-white">
+          <div class="card-body">
+            <h5 class="card-title">Head Office</h5>
+            <p>14A, Sathy Rd, near Soolai, Erode, Tamil Nadu 638004, India</p>
+            <iframe 
+              class="w-100" 
+              height="300" 
+              style="border:0;" 
+              loading="lazy"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.106675965025!2d77.73592461433859!3d11.34373259185317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babfd97ebf60f5b%3A0x734cb2705d9bbd4a!2sErode%20City!5e0!3m2!1sen!2sin!4v1696752632015!5m2!1sen!2sin"
+              allowfullscreen 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <button class="btn btn-outline-success mt-2 text" onclick="redirectToLink1()">Click Here</button>
+          </div>
+        </div>
+
+        <div class="card border-dark bg-light bg-opacity-50 text-white">
+          <div class="card-body">
+            <h5 class="card-title">Corporate Office</h5>
+            <p>17-B, 10th St, Periyar Nagar West, Perambur, Chennai</p>
+            <iframe 
+              class="w-100" 
+              height="300" 
+              style="border:0;" 
+              loading="lazy"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.611995028221!2d80.26370151433725!3d13.109516790784733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526729c8720d43%3A0xb42c441a2e68f42!2sPeriyar%20Nagar%20West%2C%20Perambur%2C%20Chennai!5e0!3m2!1sen!2sin!4v1696752734065!5m2!1sen!2sin"
+              allowfullscreen 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <button class="btn btn-outline-success mt-2 " onclick="redirectToLink2()">Click Here</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: Contact Form -->
+     
+      <div class="col-md-6 mt-5 pt-5">
+         <h2 class="text-warning text text-center" >CONTACT US</h5>
+        <div class="card shadow bg-light bg-opacity-75 text-dark">
+          <div class="card-body mt-5">
+             
+            <h4 class="text-center mb-4">Request Free Consultation</h4>
+
+            <!-- Success Message -->
+            <div id="successMessage" class="alert alert-success d-none" role="alert">
+              Your message has been successfully submitted!
+            </div>
+
+            <!-- Contact Form -->
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name *</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email *</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message *</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">SUBMIT</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5 mt-4 mb-4">
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-4">
+          <h5>Services</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://www.bmesolutions.in/dot-net/" class="text-light">Dot Net</a></li>
+            <li><a href="https://www.bmesolutions.in/website-development/" class="text-light">Website Development</a></li>
+            <li><a href="https://www.bmesolutions.in/mobile-application-development/" class="text-light">Mobile App Development</a></li>
+            <li><a href="https://www.bmesolutions.in/search-engine-optimization/" class="text-light">Search Engine Optimization</a></li>
+            <li><a href="https://www.bmesolutions.in/e-commerce-development/" class="text-light">E-Commerce Development</a></li>
+            <li><a href="https://www.bmesolutions.in/cms-development/" class="text-light">CMS Development</a></li>
+            <li><a href="https://www.bmesolutions.in/digital-marketing/" class="text-light">Digital Marketing</a></li>
+            <li><a href="https://www.bmesolutions.in/training-consultancy/" class="text-light">Training & Consultancy</a></li>
+            <li><a href="https://www.bmesolutions.in/data-entry/" class="text-light">Data Entry</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Recent Posts</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://www.bmesolutions.in/what-is-api-how-does-it-work/" class="text-light">What is API? How does it work?</a></li>
+            <li><a href="https://www.bmesolutions.in/a-cost-of-website-development-at-software-company-in-erodeindia/" class="text-light">Cost of website development in Erode, India</a></li>
+            <li><a href="https://www.bmesolutions.in/traditional-marketing-vs-digital-marketing-key-differences/" class="text-light">Traditional Marketing vs Digital Marketing</a></li>
+            <li><a href="https://www.bmesolutions.in/why-is-it-important-to-choose-a-digital-marketing-company-for-your-business/" class="text-light">Why choose a digital marketing company?</a></li>
+            <li><a href="https://www.bmesolutions.in/how-does-google-bert-work-and-its-uses/" class="text-light">How does Google BERT work?</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Get in Touch</h5>
+          <p>info@bmesolutions.in</p>
+          <p>+91 9841683336</p>
+        </div>
+      </div>
+      <div class="text-center border-top mt-4 pt-3">
+        <p>&copy; 2025 BM e-Solutions | Erode | Chennai – Tamil Nadu</p>
+        <p>Design: BM e-Solutions | <a href="https://www.bmesolutions.in/privacy/" class="text-light">Privacy & Terms</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Show alert popup
+      alert("Your message has been successfully submitted!");
+
+      // Show inline success message
+      const successMessage = document.getElementById('successMessage');
+      successMessage.classList.remove('d-none');
+
+      // Clear form
+      this.reset();
+
+      // Auto-hide success message after 5 seconds
+      setTimeout(() => {
+        successMessage.classList.add('d-none');
+      }, 5000);
+    });
+
+    // Example redirect functions
+   function redirectToLink1() {
+  window.location.href = 'https://www.google.com/maps/place/BM+e-Solutions/@11.358721,77.703317,10z/data=!4m6!3m5!1s0x3ba968d4f6b9481d:0xfe84468dc25d65e!8m2!3d11.3587212!4d77.7033175!16s%2Fg%2F11g65c51zb?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDYwMS4wIKXMDSoASAFQAw%3D%3D'; // Replace with your desired URL
+}
+function redirectToLink2() {
+  window.location.href = 'https://www.google.com/maps?ll=13.114188,80.222764&z=14&t=m&hl=en-US&gl=US&mapclient=embed&q=17-B,+10th+St+Periyar+Nagar+West,+Perambur+Chennai,+Tamil+Nadu+600049'; // Replace with your desired URL
+}
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
